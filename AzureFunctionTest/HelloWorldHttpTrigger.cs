@@ -24,6 +24,9 @@ namespace AzureFunctionTest
             dynamic data = await req.Content.ReadAsAsync<object>();
 
 
+
+
+
             name = name ?? data?.name;
 
             return name == null
