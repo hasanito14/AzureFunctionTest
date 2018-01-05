@@ -30,7 +30,7 @@ namespace AzureFunctionTest
             name = name ?? data?.name;
 
             return name == null
-                ? req.CreateResponse(HttpStatusCode.BadRequest, "Please pass anything in the request body to see return result")
+                ? req.CreateResponse(HttpStatusCode.BadRequest, "Please type anything in the request body to see return result")
                 : req.CreateResponse(HttpStatusCode.OK, "Hello " + name);
         }
     }
